@@ -1,9 +1,16 @@
 .boxOne{
     margin: 30px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size:large;
+    align-items: center; 
+    display: flex;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content:center;
-    font-family: 'Courier New', Courier, monospace;
+    
     width: 275px;
     height: 240px;
     background: tomato;
@@ -15,10 +22,18 @@
 .boxTwo{
 
     margin: 30px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size:large;
+    font-weight: bold;
+    align-items: center; 
+    display: flex;
+    color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content:center; 
-    font-family: 'Courier New', Courier, monospace;
+    justify-content:center;
+    
+   
     width: 275px;
     height: 240px;
     background: #8F00FF;
@@ -33,10 +48,25 @@
     padding: 40px;
     /* display: flex;  */
     align-items: center; 
-
+    
     width: 350px;
     height: 620px;
     background: dodgerblue;
     border: 1px solid #000000;
+
+}
+
+.boxDescription{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size:large;
+    align-items: center; 
+    display: flex;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
 
 }
