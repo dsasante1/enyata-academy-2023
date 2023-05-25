@@ -1,53 +1,61 @@
-Questions
-1 When are let and const used? What do they mean — and how are they different from var?
+Question 1.
+Let is used to declare variables that are limited to the scope of a block statement, or an expression on which it is used.
 
-let is used to declare variables that are limited to the scope of a block statement, or
-expression on which it is used.
+Const is used to declare variables. The value of a constant can't be changed through reassignment (i.e. by using the assignment operator), and it can't be redeclared Therefore const declaration creates block-scoped constants.
 
-const is used to declare variables. The value of a constant can't be changed through
-reassignment (i.e. by using the assignment operator), and it can't be redeclared.
-therefore const declaration creates block-scoped constants.
-
-var is used to declare a variable globally, or locally to an entire function regardless of block scope.
+Var is used to declare a variable globally, or locally to an entire function regardless of block scope.
 
 
-Therefore if you do not want a variable declared inside a scope to be accessed outside of the
-scope, then declare the variable using the let or const keywords.
-Variables declared with the var keyword inside a scope are accessible outside of the block too.
+Therefore if you do not want a variable declared inside a scope to be accessed outside of the scope, then declare the variable using the let or const keywords.
 
+Variables declared with the var keyword inside a scope are accessible outside of the block as well.
 
+Question 2.
 
+ A defined variable can be used after a value has been assigned to it.
 
+Question 3.
 
-2 How can we use a variable after we've defined it?
+A string can be declared by using the let, var or const keywords
+followed by an alphanumeric word that starts with an underscore or an alphabet. This is the variable's name.
 
-
-
-
-
-3. How do we declare a string?
-
-A string can be declared as by using the let, var or const keyword
-followed by an alphanumeric word that starts with an underscore or an
-alphabet this is the variable's name.
-
-Then an equal to sign is placed at the right hand side of the variable name.
+Then an equal to sign is placed at the right-hand side of the variable name.
 
 An alphanumeric word(s) is then put in between two double quotation marks then
-placed to the right hand side of the equal to sign.
+placed to the right-hand side of the equal sign.
 
-Finally a semi-colon is placed to the right hand side of the last double quotation.
+Finally, a semi-colon is placed on the right-hand side of the last double quotation.
 
+Question 4.
 
-
-4 Can we create strings with either single or double quotes? Explain
-
-5 What's the difference between "9" with quotes and 9 without?
+In Javascript, strings are created using either single or double quotes. Javascript attempts to convert any value placed in single or double quotation marks.
 
 
-6 What are the differences between the following
-Declaration
-Redeclaration
-Assignment
-Reassignment
 
+Question 5.
+
+The number nine places in between two double quotation marks is a string.
+The number nine is a number or integer.
+
+
+Question 6.
+
+Declaration involves using the var, let or const keywords to prefix a variable name in the process of storing data values.
+
+Redeclaration occurs when a formal parameter or a declared variable is declared which is very similar to an existing declared variable.
+
+
+An assignment is a process where a declared variable is given a value
+to store/represent in memory.
+
+Reassignment is the process where the value of an assigned declared variable is
+replaced with a specified value and the previous value is lost.
+
+
+In other words the differences between declaration,
+redeclaration, assignment and reassignment can be simplified because:
+Var can be redeclared and reassigned
+
+Let cannot be redeclared but it can be reassigned
+
+Const cannot be redeclared nor reassigned
