@@ -4,16 +4,17 @@
     flex-flow: column;
     display: flex;
     align-items: center;
-    justify-content: center;
-    align-content: space-between;
+    justify-content: space-evenly; 
+    position:absolute
    
 }
 
 
 
+
 /* style the text in the thee boxes */
 
-#boxOne, #boxTwo, .boxContent{
+#boxOne, #boxTwo, span{
     
     font-family: 'Courier New';
     font-weight: bold;
@@ -26,8 +27,6 @@
     
 
 }
-
-
 
 
 #boxOne{
@@ -61,4 +60,7 @@
 
 }
 
-
+.textThree{
+    position: absolute;
+    bottom: 10px;
+}
