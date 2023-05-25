@@ -1,4 +1,6 @@
-/* defines box structure */
+/* Task 0x01 */
+
+/* defines the box structure */
 
 .boxStructure{
     flex-flow: column;
@@ -9,6 +11,12 @@
    
 }
 
+/* set the position of box 3 text */
+
+.textThree{
+    position: absolute;
+    bottom: 10px;
+}
 
 
 
@@ -60,7 +68,31 @@
 
 }
 
-.textThree{
-    position: absolute;
-    bottom: 10px;
+/* Task 0x02 */
+
+/* define a tile */
+
+.tile{
+    height: 40px;
+
+    background-color: gray;
+}
+
+@media screen and (min-width: 1024px){
+    .tile{
+        margin: 50px
+    }
+    
+    .tilesContainer{
+        display: flex;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px){
+    .tile{
+        margin: 70px;
+    }
+    .tilesContainer{
+        flex-direction: column;
+    }
 }
