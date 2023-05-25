@@ -54,6 +54,7 @@ replaced with a specified value and the previous value is lost.
 
 In other words the differences between declaration,
 redeclaration, assignment and reassignment can be simplified because:
+
 Var can be redeclared and reassigned
 
 Let cannot be redeclared but it can be reassigned
