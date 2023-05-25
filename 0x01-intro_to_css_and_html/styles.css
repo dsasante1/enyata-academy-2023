@@ -97,9 +97,15 @@
 @media (min-width: 360px) and (max-width: 640px) {
     .tile {
       width: calc(100% - 20px);
+
+      
     }
+
     .tilesContainer{
+      display: flex;
       flex-direction: row;
+      flex-wrap:wrap;
+      
     }
 
   }

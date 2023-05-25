@@ -1,0 +1,53 @@
+Questions
+1 When are let and const used? What do they mean — and how are they different from var?
+
+let is used to declare variables that are limited to the scope of a block statement, or
+expression on which it is used.
+
+const is used to declare variables. The value of a constant can't be changed through
+reassignment (i.e. by using the assignment operator), and it can't be redeclared.
+therefore const declaration creates block-scoped constants.
+
+var is used to declare a variable globally, or locally to an entire function regardless of block scope.
+
+
+Therefore if you do not want a variable declared inside a scope to be accessed outside of the
+scope, then declare the variable using the let or const keywords.
+Variables declared with the var keyword inside a scope are accessible outside of the block too.
+
+
+
+
+
+2 How can we use a variable after we've defined it?
+
+
+
+
+
+3. How do we declare a string?
+
+A string can be declared as by using the let, var or const keyword
+followed by an alphanumeric word that starts with an underscore or an
+alphabet this is the variable's name.
+
+Then an equal to sign is placed at the right hand side of the variable name.
+
+An alphanumeric word(s) is then put in between two double quotation marks then
+placed to the right hand side of the equal to sign.
+
+Finally a semi-colon is placed to the right hand side of the last double quotation.
+
+
+
+4 Can we create strings with either single or double quotes? Explain
+
+5 What's the difference between "9" with quotes and 9 without?
+
+
+6 What are the differences between the following
+Declaration
+Redeclaration
+Assignment
+Reassignment
+
