@@ -73,26 +73,34 @@
 /* define a tile */
 
 .tile{
-    height: 40px;
-
-    background-color: gray;
+    height: 150px;
+    margin: 20px;
+    background-color: rgb(172, 174, 177);
 }
 
-@media screen and (min-width: 1024px){
-    .tile{
-        margin: 50px
+@media screen and (min-width: 1024px) {
+    .tile {
+      width: 200px;
+        height: 200px; 
     }
-    
+    .tilesContainer {
+      display: flex;
+      flex-direction:  row;
+      gap:  20px;
+      }
+  }
+
+
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .tile {
+      width:  80%;
+        height: 100px;
+        margin:0  auto;
+    }
     .tilesContainer{
-        display: flex;
+      display: flex;
+        flex-direction:  column;
     }
-}
 
-@media (min-width: 360px) and (max-width: 640px){
-    .tile{
-        margin: 70px;
-    }
-    .tilesContainer{
-        flex-direction: column;
-    }
-}
+  }
