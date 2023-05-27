@@ -3,10 +3,18 @@
 //user inputs
 
 
-let name = prompt("what is your name?: ");
-let gender = prompt("what is your gender?: ");
-let age = prompt("how old are you? ");
-let story_name = prompt("Now, what is the title of your story? ");
+let name = prompt("what is your name?: "); //string
+let gender = prompt("what is your gender?: "); //string
+let age = prompt("how old are you? "); //number
+let story_name = prompt("Now, what is the title of your story? "); //string
+
+let players_team; //string
+let opposing_team; //string
+let final_scores; //number
+let distance; // float
+let foul; //bool
+let keeper_saves; //bool
+
 
 //prompt("hello world");
 
