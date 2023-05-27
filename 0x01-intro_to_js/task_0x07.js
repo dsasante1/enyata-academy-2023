@@ -10,8 +10,8 @@ const favouriteTeam = prompt('what is your favourite football team?:');
 const rivalTeam = prompt('what is the name of their rivals');
 const goalsScored = parseInt(prompt('How many goals did your favourite team score against their rivals the last time they played?: ',0));
 const distanceCovered = parseFloat(prompt("What is the average  distance covered by your team's players in the match? : ", 20.0));
-let isRefreeBiased = prompt('Was the refree biased? true or false: ',true);
-let isGoalKeeperGood = prompt('your favourite teams goalkeeper, is he good? true or false : ',true);
+let isRefreeBiased = prompt('Was the refree biased? true or false: ');
+let isGoalKeeperGood = prompt('your favourite teams goalkeeper, is he good? true or false : ');
 
 
 
@@ -67,8 +67,9 @@ distanceCovered, isRefreeBiased, isGoalKeeperGood){
       The previous time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}.
       It was a win for ${favouriteTeam}`;
       }
+  let story = storyTemplate + gameIntensity + biasedReferee + pastVictories;
 
-  return storyTemplate + gameIntensity + biasedReferee + pastVictories;
+  return story;
 }
 
 // call function
