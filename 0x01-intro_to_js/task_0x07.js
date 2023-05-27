@@ -23,30 +23,21 @@ function fullStory(name, gender, age, storyName, favouriteTeam, rivalTeam, goals
   let biasedRefree;
   let goodGoalKeeper;
 
-  let storyTemplate = `My name is ${name}. I am ${gender}. I am ${age} years old.
-The title of my story is ${storyName}...
+  let storyTemplate = `   My name is ${name}. I am ${gender}. I am ${age} years old. The title of my story is ${storyName}...
 
-My favourite team is ${favouriteTeam} their sworn rival is ${rivalTeam}.
-In fact if ${favouriteTeam} is given a gun and loaded with two bullets and instructed to shoot the devil and ${rivalTeam}.
-${favouriteTeam} will shoot ${rivalTeam} twice in the head.`
-
-  if (goalsScored > 3){
-      pastVictories = `The last time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}. It was a mighty defeat.`;
-      }else{
-      pastVictories = `The last time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}.`;
-      }
+    My favourite team is ${favouriteTeam} their sworn rival is ${rivalTeam}.
+In fact if ${favouriteTeam} is given a gun and loaded with two bullets and instructed to shoot the devil and ${rivalTeam}. ${favouriteTeam} will shoot ${rivalTeam} twice in the head.`
 
   if (distanceCovered > 30){
         gameIntensity = `${favouriteTeam} dominated the game covering a staggering ${distanceCovered}km on the football pitch.
         ${rivalTeam} were clearly out of their depths, dazed, and moving haphazardly like a chicken without a head. Fans of ${favouriteTeam} roared with cheers and started celebrating before the final whistle was blown.
         It was an incredible game.`;
   }else{
-        gameIntensity = `Although it was a lacklustre performance by ${favouriteTeam}, ${rivalTeam} was worse.
-        ${rivalTeam}They were just not good enough. ${rivalTeam} relies on their past glories and hay days without nothing to show for it in the current football dispensation.`;
+        gameIntensity = `Although it was a lacklustre performance by ${favouriteTeam}, ${rivalTeam} was worse.`;
       }
 
   if (isRefreeBiased == true){
-      biasedRefree = `The refree had an agenda against ${favouriteTeam}. He was on the pitch with the sole intention of winnging the game for ${rivalTeam}.`;
+      biasedRefree = `The refree had an agenda against ${favouriteTeam}. He was on the pitch with the sole intention of wininging the game for ${rivalTeam}.`;
   }else{
       biasedRefree = `Suprisingly the refree was not biased and his decisions were top notch. It was a fair game between ${favouriteTeam} and ${rivalTeam}`;
   }
@@ -62,6 +53,14 @@ ${favouriteTeam} will shoot ${rivalTeam} twice in the head.`
   }else{
       goodGoalKeeper = `At the end of the game ${favouriteTeam} emerged victorious`;
     }
+
+  if (goalsScored > 3){
+      pastVictories = `The last time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}. It was a mighty defeat.`;
+  }else if(goalsScored == 0){
+        pastVictories = `The last time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}. It was a draw.`;
+  }else{
+      pastVictories = `The last time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}.`;
+      }
 
   return storyTemplate + pastVictories + gameIntensity + gameIntensity + biasedRefree + goodGoalKeeper;
 }
