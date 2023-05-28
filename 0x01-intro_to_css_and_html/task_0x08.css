@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.titleContent{
+    display: flex;
+    flex-flow: row;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+    background-color: tomato;
+    color:white;
+}
+
+#globe{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.viewDetails{
+    display: flex;
+    flex-flow: column;
+    /* flex-wrap: wrap; */
+    margin: 20px
+
+}
+
+.innerBox{
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    margin: 20px
+}
+
+#countryImage{
+    height: 50px;
+    width: 30px;
+    border-radius: 4px;
+}
+
+.rowContent{
+    display: flex;
+    flex-flow: column;
+    gap: 2px;
+    flex-wrap: wrap;
+    margin: 2px
+}
+
+
+
+
+#googleMapsUrl{
+    display: inline-block;
+    margin-left: 5px;
+    text-decoration: underline;
+    color:lightgray;
+
+
+}
+
+#touristSite{
+    font-weight: bolder;
+    font-size: medium;
+}
+
+#date{
+    font-weight: bold;
+}
+
+#locationIcon{
+    display: inline-block;
+    margin-right: 2px;
+    height: 3px;
+}
+
+
+@media (min-width: 756px) and (max-width: 640px) {
+    
+    .innerBox{
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      height: 30px;
+      
+    }
+
+}
