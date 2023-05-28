@@ -58,7 +58,7 @@ span{
     display: flex;
     flex-flow: column;
     gap: 2px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 2px
 }
 
@@ -76,6 +76,7 @@ span{
 #touristSite{
     font-weight: bolder;
     font-size: medium;
+    font-family: Inter;
 }
 
 #date{
@@ -86,21 +87,11 @@ span{
     display: inline-block;
     margin-right: 6px;
     height: 9px;
-    width: 7px;
+    width: 5px;
 }
 
 
-@media (min-width: 756px) and (max-width: 640px) {
-    
-    .innerBox{
-      display: flex;
-      flex-direction: row;
-      flex-wrap:wrap;
-      height: 30px;
-      
-    }
 
-}
 
 hr{
     color:lightgray;
@@ -108,3 +99,213 @@ hr{
     border-top: 0.5px solid #ffffff;
 
 }
+
+
+
+ 
+ /* Small devices ( 360px and up) */
+ @media only screen and (min-width: 360px) {
+
+    .innerBox{
+        display: flex;
+        flex-direction: row;
+
+        
+      }
+
+
+
+    #googleMapsUrl{
+        display: inline-block;
+        margin-left: 2px;
+        text-decoration: underline;
+        color:lightgray;
+
+    }
+
+    #locationIcon{
+        display: inline-block;
+        margin-right: 3px;
+        height: 9px;
+        width: 5px;
+    }
+    
+ 
+
+
+ }
+
+
+ 
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+    .innerBox{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap:wrap; */
+ 
+        
+      }
+
+ }
+ 
+ /* Medium devices (landscape tablets, 500px and up) */
+
+ 
+ @media only screen and (min-width: 500px) {
+    
+    .innerBox{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap:wrap; */
+        height: 110;
+
+        
+    }
+
+    span{
+        font-size: small;
+    }
+
+    #touristSite{
+        font-size: small;
+
+    }
+
+    #date{
+        font-size: x-small;
+    }
+
+    #locationIcon{
+        display: inline-block;
+        margin-right: 6px;
+        height: 13px;
+        width: 9px;
+    }
+ }
+ 
+
+
+ /* intermediate Large devices (laptops/desktops, 700px and up) */
+ 
+ 
+ @media only screen and (min-width: 700px) {
+    
+    .innerBox{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap:wrap; */
+        height: 150;
+
+        
+    }
+
+    span{
+        font-size: large;
+    }
+
+    #touristSite{
+        font-size: large;
+
+    }
+
+    #date{
+        font-size: small;
+    }
+
+    #locationIcon{
+        display: inline-block;
+        margin-right: 6px;
+        height: 16px;
+        width: 12px;
+    }
+
+
+ }
+ 
+
+
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ 
+ 
+ @media only screen and (min-width: 992px) {
+    
+    .innerBox{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap:wrap; */
+        height: 250;
+
+        
+    }
+
+    span{
+        font-size: larger;
+    }
+    
+    #touristSite{
+        font-size: larger;
+
+    }
+
+    #date{
+        font-size: large;
+    }
+
+    #locationIcon{
+        display: inline-block;
+        margin-right: 6px;
+        height: 17px;
+        width: 14px;
+    }
+
+ }
+ 
+
+
+
+
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+ @media only screen and (min-width: 1200px) {
+
+    .innerBox{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap:wrap; */
+        height: 300;
+
+        
+    }
+
+    span{
+        font-size: x-large;
+    }
+
+    #touristSite{
+        font-size: x-large;
+
+    }
+
+    #date{
+        font-size: large;
+    }
+
+    #locationIcon{
+        display: inline-block;
+        margin-right: 6px;
+        height: 22px;
+        width: 16px;
+    }
+
+ } 
+
+
+
+
+
+ 
