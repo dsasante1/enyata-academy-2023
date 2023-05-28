@@ -13,6 +13,13 @@
     justify-content:center; 
     background-color: tomato;
     color:white;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+    text-align: left;
+
 }
 
 #globe{
@@ -25,7 +32,7 @@
     display: flex;
     flex-flow: column;
     /* flex-wrap: wrap; */
-    margin: 20px
+    margin: 10px
 
 }
 
@@ -38,12 +45,12 @@
 }
 
 span{
-    font-size: small;
+    font-size: xx-small;
 }
 
 #countryImage{
-    height: 200px;
-    width: 150px;
+    height: 180px;
+    width: 140px;
     border-radius: 4px;
 }
 
@@ -60,10 +67,9 @@ span{
 
 #googleMapsUrl{
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 3px;
     text-decoration: underline;
     color:lightgray;
-
 
 }
 
@@ -79,7 +85,7 @@ span{
 #locationIcon{
     display: inline-block;
     margin-right: 6px;
-    height: 8px;
+    height: 9px;
     width: 7px;
 }
 
