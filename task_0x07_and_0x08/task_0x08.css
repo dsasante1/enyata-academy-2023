@@ -37,9 +37,13 @@
     margin: 20px
 }
 
+span{
+    font-size: small;
+}
+
 #countryImage{
-    height: 50px;
-    width: 30px;
+    height: 200px;
+    width: 150px;
     border-radius: 4px;
 }
 
@@ -74,8 +78,9 @@
 
 #locationIcon{
     display: inline-block;
-    margin-right: 2px;
-    height: 3px;
+    margin-right: 6px;
+    height: 8px;
+    width: 7px;
 }
 
 
@@ -88,5 +93,12 @@
       height: 30px;
       
     }
+
+}
+
+hr{
+    color:lightgray;
+   
+    border-top: 0.5px solid #ffffff;
 
 }
