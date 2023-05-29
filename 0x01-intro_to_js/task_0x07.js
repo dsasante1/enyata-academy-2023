@@ -1,4 +1,7 @@
 
+function fullStory () {
+
+
 // user inputs
 
 const name = prompt(' Welcome write a story about your favourite team!\nwhat is your name? : ');
@@ -13,11 +16,11 @@ const distanceCovered = parseFloat(prompt("What is the average  distance covered
 const isRefreeBiased = prompt('Was the refree biased? true or false: ');
 const isGoalKeeperGood = prompt('your favourite teams goalkeeper, is he good? true or false : ');
 
-function fullStory (name, gender, age, storyName, favouriteTeam, rivalTeam, goalsScored,
-  distanceCovered, isRefreeBiased, isGoalKeeperGood) {
+    
   let pastVictories;
   let gameIntensity;
   let biasedReferee;
+  let goalkeeper;
 
   const storyTemplate = `   My name is ${name}. I am ${gender}. I am ${age} years old.
   The title of my story is ${storyName}...
@@ -26,51 +29,36 @@ function fullStory (name, gender, age, storyName, favouriteTeam, rivalTeam, goal
 
     `;
 
-  if (distanceCovered > 15.0) {
-    gameIntensity = `${favouriteTeam} dominated the game covering a staggering ${distanceCovered} km on the football pitch. ${rivalTeam} were clearly out of their depths, dazed, and moving haphazardly like a chicken without a head. Fans of ${favouriteTeam} roared with cheers and started celebrating before the final whistle was blown. It was an incredible game. `;
-  } else {
-    gameIntensity = `Although it was a lacklustre performance by ${favouriteTeam}, ${rivalTeam} was worse. `;
-  }
+    gameIntensity = `it was a good game ${favouriteTeam} players averagely covered ${distanceCovered} km of the football pitch. ${rivalTeam} also did their best.`;
 
-  if (isGoalKeeperGood && isRefreeBiased) {
+
+  if (isRefreeBiased) {
     biasedReferee = `
-      The previous encounter between ${favouriteTeam} and ${rivalTeam}, it seems the refree had an agenda against ${favouriteTeam}. He was on the pitch with the sole intention of winning the game for ${rivalTeam}. However, ${favouriteTeam}'s goalkeeper was in his elements. He saved the day.
+      The previous encounter between ${favouriteTeam} and ${rivalTeam}, it seems the refree had an agenda against ${favouriteTeam}.
       `;
-  } else if (!isGoalKeeperGood && isRefreeBiased) {
-    biasedReferee = `
-      The previous time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} maintained their lead to the end of the match. Althought their goalkeeper was horrible and it seems the referee had an agenda against ${favouriteTeam}`;
-  } else if (!isGoalKeeperGood && !isRefreeBiased) {
-    biasedReferee = `
-      The last time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} goalkeeper was not in his elements. Surprisingly the referee was not biased and his decisions were top-notch. It was a fair game between ${favouriteTeam} and ${rivalTeam}.  `;
-  } else if (isGoalKeeperGood && !isRefreeBiased) {
-    biasedReferee = `
-      The previous encounter between ${favouriteTeam} and ${rivalTeam}, by all standards the referee was firm and fair. Goal keeper for ${favouriteTeam} was alert and made amazing saves'.
-      `;
-  } else {
+  }else {
     biasedReferee = `
       The previous time ${favouriteTeam} met ${rivalTeam}, the game was well-balanced.
       `;
   }
 
-  if (goalsScored > 3) {
-    pastVictories = `
-      The previous time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}. It was a mighty victory.`;
-  } else if (goalsScored === 0) {
-    pastVictories = `
-        The previous time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}. It was a draw .`;
-  } else {
-    pastVictories = `
-      The previous time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}.
-      It was a win for ${favouriteTeam}`;
-  }
-  const story = storyTemplate + gameIntensity + biasedReferee + pastVictories;
+  if (isGoalKeeperGood) {
+  goalkeeper = `
+    The previous time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam}, ${favouriteTeam} goalkeeper was very good`;
+} else{
+  goalkeeper = `
+    The last time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} goalkeeper was not in his elements.`;
+}
+  pastVictories = `
+      The previous time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}.`;
 
-  return story;
+   
+  const story = storyTemplate + gameIntensity + biasedReferee + goalkeeper + pastVictories;
+  
+  // display the story to the user
+  alert(story);
 }
 
 // call function
-const story = fullStory(name, gender, age, storyName, favouriteTeam, rivalTeam,
-  goalsScored, distanceCovered, isRefreeBiased, isGoalKeeperGood);
+fullStory();
 
-// display the story to the user
-alert(story);

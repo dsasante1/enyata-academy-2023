@@ -277,7 +277,7 @@ hr{
         display: flex;
         flex-direction: row;
         /* flex-wrap:wrap; */
-        height: 300;
+        height: 300px;
 
         
     }
