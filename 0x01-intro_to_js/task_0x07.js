@@ -15,6 +15,8 @@ const matchVenue = prompt('where was the match played : ');
 
 function fullStory () {
   
+  var alternateEnding = `the ${rivalTeam} won unfortunately. It was a glorious victory! `;
+
   let storyTemplate = `   My name is ${name}. I am ${gender}. I am ${age} years old.
   The title of my story is ${storyName}...
 
@@ -32,7 +34,9 @@ function fullStory () {
   let  pastVictories = `
       The previous time ${favouriteTeam} met ${rivalTeam}, ${favouriteTeam} scored  ${goalsScored} goals against ${rivalTeam}.`;
 
-  let dynamicStory = storyTemplate + stadium + colorJersey + pastVictories;
+  alternateEnding = pastVictories;
+
+  let dynamicStory = storyTemplate + stadium + colorJersey + alternateEnding;
 
   // display the story to the user
   alert(dynamicStory);
