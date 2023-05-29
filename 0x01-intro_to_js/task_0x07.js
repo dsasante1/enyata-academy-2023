@@ -1,8 +1,6 @@
 
 // user inputs
 
-
-
 function fullStory () {
 
   const name = prompt(' Welcome write a story about your favourite team!\nwhat is your name? : ');
@@ -15,7 +13,9 @@ function fullStory () {
   const goalsScored = parseInt(prompt('How many goals did your favourite team score against their rivals the last time they played?: '));
   const favouriteTeamJerseyColor = prompt('What the color of your favourite teams jersey: ');
   const rivalTeamJerseyColor = prompt('What the color of your favourite teams jersey : ');
-  const matchVenue = prompt('where was the match played : ');  
+  const matchVenue = prompt('where was the match played : '); 
+  
+  
   var alternateEnding = `the ${rivalTeam} won unfortunately. It was a glorious victory! `;
 
   let storyTemplate = `   My name is ${name}. I am ${gender}. I am ${age} years old.
