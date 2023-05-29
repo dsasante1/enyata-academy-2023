@@ -1,20 +1,21 @@
 
 // user inputs
 
-const name = prompt(' Welcome write a story about your favourite team!\nwhat is your name? : ');
-const gender = prompt('what is your gender? : ');
-const age = parseInt(prompt('how old are you? : '));
-const storyName = prompt('Now, what is the title of your story? : ');
 
-const favouriteTeam = prompt('what is your favourite football team?:');
-const rivalTeam = prompt('what is the name of their rivals');
-const goalsScored = parseInt(prompt('How many goals did your favourite team score against their rivals the last time they played?: '));
-const favouriteTeamJerseyColor = prompt('What the color of your favourite teams jersey: ');
-const rivalTeamJerseyColor = prompt('What the color of your favourite teams jersey : ');
-const matchVenue = prompt('where was the match played : ');
 
 function fullStory () {
+
+  const name = prompt(' Welcome write a story about your favourite team!\nwhat is your name? : ');
+  const gender = prompt('what is your gender? : ');
+  const age = parseInt(prompt('how old are you? : '));
+  const storyName = prompt('Now, what is the title of your story? : ');
   
+  const favouriteTeam = prompt('what is your favourite football team?:');
+  const rivalTeam = prompt('what is the name of their rivals');
+  const goalsScored = parseInt(prompt('How many goals did your favourite team score against their rivals the last time they played?: '));
+  const favouriteTeamJerseyColor = prompt('What the color of your favourite teams jersey: ');
+  const rivalTeamJerseyColor = prompt('What the color of your favourite teams jersey : ');
+  const matchVenue = prompt('where was the match played : ');  
   var alternateEnding = `the ${rivalTeam} won unfortunately. It was a glorious victory! `;
 
   let storyTemplate = `   My name is ${name}. I am ${gender}. I am ${age} years old.
@@ -43,6 +44,4 @@ function fullStory () {
 }
 
 // call fullStory
-fullStory(name, gender, age, storyName, favouriteTeam,
-  rivalTeam, goalsScored, favouriteTeamJerseyColor,
-  rivalTeamJerseyColor, matchVenue);
+fullStory();
